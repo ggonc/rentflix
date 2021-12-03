@@ -1,0 +1,120 @@
+:root { /* Declara as variáveis das cores*/
+    --vermelho: #E50914;
+    --preto: #141414;
+    --branco: #aaa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Bebas Neue', 'Arial Black';
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--vermelho);
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 30px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* Elemento principal */ 
+.principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('https://cdn.pixabay.com/photo/2017/06/13/22/42/kitchen-2400367_960_720.jpg');
+
+    height: 700px;
+    background-size: cover; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--preto);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container h3 {
+    margin-top: 20px;
+}
+
+.principal .container{
+    width: 60%;
+    margin-left: 20px;
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+    background-color: #ffffff10;
+    max-width: 550px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.box-imovel{ /* especificar tamanho das imagens do carrossel */
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+}
+
+.carrossel-imoveis{
+    margin: 15px 20px;
+}
+
