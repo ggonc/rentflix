@@ -1,2 +1,2 @@
 # Rentflix
-Recriação do Netflix reimaginado como uma página de mercado imobiliário. 
+Recriação da interface do Netflix como uma página de mercado imobiliário, utilizando HTML, CSS e JavaScript.
