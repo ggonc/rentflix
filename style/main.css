@@ -83,6 +83,10 @@ header nav a:hover{
     transition: .3s ease all;
 }
 
+.like {
+    color: var(--vermelho);
+}
+
 .botao:hover{
     background-color: white;
     color: var(--preto);
@@ -118,3 +122,7 @@ header nav a:hover{
     margin: 15px 20px;
 }
 
+.box-imovel:hover{
+    cursor: pointer;
+    filter:opacity(70%);
+}

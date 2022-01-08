@@ -17,6 +17,15 @@ $('.owl-carousel').owlCarousel({
 
 // Ao clicar no botão "Favoritos" o ícone muda para um coração preenchido.
 // Falta fazer o processo reverso quando clicado para remover dos favoritos.
+// function alterarFavorito(){ 
+//     $("#favorito").addClass("fas fa-heart");
+// }
+
 function alterarFavorito(){ 
-    $("#favorito").addClass("fas fa-heart");
+    let favorito = document.getElementById("favorito");
+    if (favorito.className == "far fa-heart"){
+        favorito.classList.add("fas", "fa-heart", "like");
+    } else if (favorito.className == "far fa-heart fas like"){
+        favorito.classList.remove("fas", "like")
+    }
 }
